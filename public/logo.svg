@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="355" height="140" viewBox="0 0 355 140">
+  <defs>
+    <filter id="Rectangle_1" x="0" y="23" width="88" height="36" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_2" x="1" y="91" width="88" height="36" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="translate(-618 -649)">
+    <g id="Group_1" data-name="Group 1">
+      <text id="uriets" transform="translate(707 760)" fill="#222" font-size="106" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">uriets</tspan></text>
+      <path id="Path_2" data-name="Path 2" d="M155.461,3V19.94L133.668,44.486,110.341,70.761h45.12V87.7H87.7V70.761l45.112-50.82H87.7V3Z" transform="translate(540.769 675.769)" fill="#222"/>
+    </g>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="14" cy="14" r="14" transform="translate(800 668)" fill="#72a777"/>
+    <g transform="matrix(1, 0, 0, 1, 618, 649)" filter="url(#Rectangle_1)">
+      <rect id="Rectangle_1-2" data-name="Rectangle 1" width="70" height="18" transform="translate(9 29)" fill="#3f3acc"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 618, 649)" filter="url(#Rectangle_2)">
+      <rect id="Rectangle_2-2" data-name="Rectangle 2" width="70" height="18" transform="translate(10 97)" fill="#3f3acc"/>
+    </g>
+  </g>
+</svg>

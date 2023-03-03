@@ -1,0 +1,27 @@
+{
+  "name": "Simanta",
+  "short_name": "sam",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#06e249",
+  "background_color": "#c46a00",
+  "icons": [
+    {
+      "src": "/static/icons/favicon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icons/favicon512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/static/icons/favicon.png",
+      "sizes": "512x243",
+      "type": "image/png"
+    }
+  ]
+}
