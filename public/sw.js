@@ -81,35 +81,23 @@ if (!self.define) {
     });
   };
 }
-define("./sw.js",['./workbox-b90066a8'], function (workbox) { 'use strict';
-
-  /**
-  * Welcome to your Workbox-powered service worker!
-  *
-  * You'll need to register this file in your web app.
-  * See https://goo.gl/nhQhGp
-  *
-  * The rest of the code is auto-generated. Please don't update this file
-  * directly; instead, make changes to your Workbox build configuration
-  * and re-run your build process.
-  * See https://goo.gl/2aRDsh
-  */
+define("./sw.js",['./workbox-f456c70a'], function (workbox) { 'use strict';
 
   importScripts();
   workbox.skipWaiting();
   workbox.clientsClaim();
+
   /**
    * The precacheAndRoute() method efficiently caches and responds to
    * requests for URLs in the manifest.
    * See https://goo.gl/S9QRab
    */
-
   workbox.precacheAndRoute([{
     "url": "/_next/static/runtime/amp.js",
-    "revision": "30381d657ee43a8d1724447f78a39f77"
+    "revision": "54dcb64f8239088e54184344dd04714d"
   }, {
     "url": "/_next/static/runtime/main.js",
-    "revision": "ba99192de3fc5046bbe69d50a192c860"
+    "revision": "87bee0a523b5b50395e6efa3ff6eade5"
   }, {
     "url": "/_next/static/runtime/polyfills.js",
     "revision": "7d777dff3dc41f9b32777073d94aeb66"
@@ -118,11 +106,15 @@ define("./sw.js",['./workbox-b90066a8'], function (workbox) { 'use strict';
     "revision": "0620b7c58e0f6f6643d1dd663a87864c"
   }, {
     "url": "/_next/static/runtime/webpack.js",
-    "revision": "25c27009110cef67225f0fe40f2d42e9"
+    "revision": "1d62bf4f8b884d4b5e6c02dbd857ebcc"
   }], {
     "ignoreURLParametersMatching": [/ts/]
   });
   workbox.cleanupOutdatedCaches();
+  workbox.registerRoute(/.*/i, new workbox.NetworkOnly({
+    "cacheName": "dev",
+    plugins: []
+  }), 'GET');
 
 });
 //# sourceMappingURL=sw.js.map
